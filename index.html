@@ -6,28 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/default.css">
     <title>Західно-Український кінний двір</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html">
-                Головна
-            </a>
-            <a href="services.html">
-                Послуги
-            </a>
-            <a>
-                Фотографії
-            </a>
-            <a>
-                Відео
-            </a>
-        </div>
-        <div>
-            <form>
-                <input type="search" name="search" placeholder="Пошук">
-                <input type="submit" value="Знайти">
-            </form>
+    <header id="home">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a>Фотографії</a></li>
+                <li><a>Відео</a></li>
+            </ul>
+        </nav>
+        <div class="topnav">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
     </header>
     <div class="main">
