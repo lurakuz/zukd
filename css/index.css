@@ -1,12 +1,15 @@
-html,body { margin: 0; margin-top: 0px;padding: 0; border: 0;outline: 0;  }
+html,body { margin: 0; margin-top: 0px;padding: 0; border: 0;outline: 0;}
+
+body {
+    margin: auto;
+}
 
 header {
     background-color: #333333;
 }
 
-#home .menu {
-  width: 600px;
-  justify-content: space-between;
+header .menu {
+    justify-content: space-between;
 }
 
 header .menu ul {
@@ -25,46 +28,46 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-  background-color: grey;
+    background-color: grey;
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #333333;
+    overflow: hidden;
+    background-color: #333333;
 }
 
 .topnav .search-container {
-  float: right;
-  padding-top: 5px;
+    float: right;
+    padding-top: 5px;
 }
 
 .topnav input[type=text] {
-  padding: 6px;
-  margin-top: 0px;
-  font-size: 17px;
-  border: none;
-  background-color: grey;
+    padding: 6px;
+    margin-top: 0px;
+    font-size: 17px;
+    border: none;
+    background-color: grey;
 }
 
 .topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 0px;
-  margin-right: 16px;
-  background: #333333;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  padding-top: 5px;
+    float: right;
+    padding: 6px 10px;
+    margin-top: 0px;
+    margin-right: 16px;
+    background: #333333;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    padding-top: 5px;
 }
 
 .topnav .search-container button:hover {
-  background: #ccc;
+    background: #ccc;
 }
 
 @media (min-width: 561px) {
-    #home .menu {
-        justify-content: space-between;
+    header .menu {
+        justify-content: space-betwen;
     }
 
     header .menu .topnav {
@@ -77,6 +80,28 @@ header .menu ul li a:hover {
   }
 }
 
+@media (min-width: 900px) {
+    header .width{
+        width: 2000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header .menu {
+        width: 600px;
+    }
+    footer .width{
+        width: 2000px;
+        margin: auto;
+    }
+}
+
+.main {
+    max-width: 2000px;
+    margin: auto;
+}
+
 .main .head h1 {
   text-align: center;
 }
@@ -86,7 +111,7 @@ header .menu ul li a:hover {
 }
 
 .main .head .main-photo img {
-  width: 300px;
+  width: 320px;
   
 }
 
@@ -123,11 +148,11 @@ header .menu ul li a:hover {
   margin-left: 10px;
 }
 
-.main #location p {
+.main .location p {
   text-align: center;
 }
 
-.main #greetings .words {
+.main .greetings .words {
   text-align: center;
 }
 
@@ -150,74 +175,70 @@ footer {
 }
 
 
-footer .contacts .location-png img {
+footer .width .contacts .location-png img {
   width: 15px;
   height: 20px;
 }
 
-footer .contacts .location-png p {
+footer .width .contacts .location-png p {
   margin-top: 0px;
 }
 
-footer .contacts .location-png {
+footer .width .contacts .location-png {
   display: flex;
   justify-content: center;
 }
 
-footer {
+footer .width {
   color: white;
 }
 
-footer .contacts .phone img {
+footer .width .contacts .phone img {
   width: 15px;
   height: 20px;
 }
 
-footer .contacts .phone {
+footer .width .contacts .phone {
   display: flex;
   justify-content: center;
 }
 
-footer .contacts .phone p {
+footer .width .contacts .phone p {
   margin-top: 0px;
 }
 
-footer .sources {
+footer .width .sources {
   display: flex;
   justify-content: space-between;
   margin-left: 150px;
   margin-right: 150px;
 }
 
-footer .sources img {
+footer .width .sources img {
   width: 50px;
 }
 
-.main #location iframe {
+.main .location iframe {
   width: 100%;
   height: 300px;
 }
 
 @media (min-width: 500px) {
-  footer {
+  footer .width {
     display: flex;
   }
   
-  footer .contacts {
+  footer .width .contacts {
     flex: 1;
     margin-top: 15px;
     min-width: 200px;
   }
   
-  footer .sources {
+  footer .width .sources {
     flex: 1;
     justify-content: space-around;
     margin-top: 30px;
     margin-left: 50%;
     display: flex;
   }
-}
-
-.clock {
-  color: red;
 }
